@@ -59,7 +59,6 @@ macro_rules! uint_impl {
 
             #[inline(always)]
             pub const fn ifs_pack(
-                #[allow(unused_variables)]
                 num: $int
             ) -> usize {
                 many_ifs!(num, $int, $($rest)*)
